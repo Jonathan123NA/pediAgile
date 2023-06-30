@@ -27,7 +27,7 @@
             android:text="Iniciar Sesion"/>
 
         <EditText
-            android:id="@+id/etIUsuario"
+            android:id="@+id/login_email"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:hint="Correo"
@@ -89,7 +89,7 @@
                         android:elevation="200dp"
                         android:layout_gravity="center"
                         android:onClick="cambiarRegistro"
-                        android:text="@string/IniSec"
+                        android:text="Iniciar Sesion"
                         android:textColor="@color/Blanco"
                         android:translationZ="200dp"
                         app:cornerRadius="100dp" />
@@ -102,7 +102,7 @@
                         android:layout_gravity="end"
                         android:layout_marginTop="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text=""
+                        android:text="¿Olvidaste tu contraseña?"
                         android:textColor="@color/azul"
                         android:textSize="14sp" />
 
@@ -167,6 +167,7 @@
                     </RelativeLayout>
 
         <LinearLayout
+            android:id="@+id/enviar_a_Registro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
