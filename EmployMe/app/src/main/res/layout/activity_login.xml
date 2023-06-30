@@ -30,8 +30,8 @@
             android:id="@+id/etIUsuario"
             android:layout_width="match_parent"
             android:layout_height="55dp"
-            android:background="@drawable/background_edit_text"
             android:hint="Correo"
+            android:background="@drawable/background_edit_text"
             android:maxLines="1"
             android:inputType="text"
             android:textSize="16sp"
@@ -190,7 +190,5 @@
                 android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
-
-
 
 </ScrollView>

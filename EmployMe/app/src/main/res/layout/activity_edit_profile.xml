@@ -33,21 +33,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="-35dp"
-                android:background="@drawable/rounded_background">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/camera"
-                    android:padding="2dp"
-                    />
-            </LinearLayout>
-
 
 
             <TextView
@@ -63,13 +48,13 @@
             <EditText
                 android:id="@+id/nombreET"
                 android:layout_width="match_parent"
+                android:hint="Nombre"
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/cuadro_editext"
+                android:background="@drawable/background_edit_text"
                 android:drawableLeft="@drawable/ico_perfil"
                 android:drawablePadding="8dp"
-                android:hint="Nombre"
                 android:inputType="text"
                 android:padding="8dp"
                 android:textColor="@color/black" />
@@ -80,7 +65,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/cuadro_editext"
+                android:background="@drawable/background_edit_text"
                 android:drawableLeft="@drawable/ico_perfil"
                 android:drawablePadding="8dp"
                 android:hint="Apellido Paterno"
@@ -94,7 +79,7 @@
                 android:layout_height="60dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="5dp"
-                android:background="@drawable/cuadro_editext"
+                android:background="@drawable/background_edit_text"
                 android:drawableLeft="@drawable/ico_perfil"
                 android:drawablePadding="8dp"
                 android:hint="Apellido Materno"
@@ -106,15 +91,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/cuadro_editext">
+                >
 
                 <EditText
                     android:id="@+id/passwordET"
                     android:layout_toStartOf="@+id/passwordIcon"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:drawableLeft="@drawable/ico_lock"
-                    android:background="@drawable/cuadro_editext"
+                    android:background="@drawable/background_edit_text"
+
                     android:hint="Contraseña"
                     android:paddingStart="10dp"
                     android:inputType="textPassword" />
@@ -137,15 +122,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:background="@drawable/cuadro_editext">
+                >
 
                 <EditText
                     android:id="@+id/confirmPasswordET"
                     android:layout_toStartOf="@+id/passwordIcon2"
                     android:layout_width="match_parent"
                     android:layout_height="60dp"
-                    android:drawableLeft="@drawable/ico_lock"
-                    android:background="@drawable/cuadro_editext"
+                    android:background="@drawable/background_edit_text"
+
                     android:hint="Contraseña"
                     android:paddingStart="10dp"
                     android:inputType="textPassword" />
@@ -165,13 +150,17 @@
             </RelativeLayout>
             <Button
                 android:id="@+id/savePerfil"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginTop="30dp"
-                android:backgroundTint="@color/azul"
-                android:text="Guardar Perfil"
-
-                android:textSize="15sp"
+                android:layout_width="370dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#3D69BF"
+                android:elevation="200dp"
+                android:layout_gravity="center"
+                android:onClick="cambiarRegistro"
+                android:text="@string/IniSec"
+                android:textColor="@color/Blanco"
+                android:translationZ="200dp"
+                app:cornerRadius="100dp" />
                 />
         </LinearLayout>
 
