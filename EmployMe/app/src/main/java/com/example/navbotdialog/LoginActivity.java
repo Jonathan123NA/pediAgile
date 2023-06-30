@@ -134,8 +134,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 // Iniciar las animaciones
                 animatorSet.start();
-                Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
+                //startActivity(intent);
             }
         });
 
@@ -155,8 +155,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 // Iniciar las animaciones
                 animatorSet.start();
-                Intent intent = new Intent(LoginActivity.this, forgetPassword.class);
-                startActivity(intent);
+                //Intent intent = new Intent(LoginActivity.this, forgetPassword.class);
+                //startActivity(intent);
             }
         });
 

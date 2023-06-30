@@ -3,9 +3,9 @@
     <item
         android:id="@+id/option_camera"
 
-        android:title="Camara" />
+        android:title="Abrir Camara" />
     <item
         android:id="@+id/opcion_galery"
 
-        android:title="Galeria" />
+        android:title="Abrir la Galeria" />
 </menu>

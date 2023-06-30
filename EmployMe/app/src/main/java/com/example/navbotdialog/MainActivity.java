@@ -14,6 +14,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -146,7 +147,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_love:
                         replaceFragment(new FavoritoFragment());
                         LottieAnimationView loveView = new LottieAnimationView(getApplicationContext());
-                        loveView.setAnimation(R.raw.love);
+                        loveView.setAnimation(R.raw.ubication);
                         loveView.playAnimation();
                         FrameLayout loveLayout = findViewById(R.id.nav_love);
                         loveLayout.removeAllViews();
@@ -336,6 +337,8 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         finish(); // Finalizar la actividad para salir
+                        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+                        startActivity(intent);
                     }
                 })
                 .setNegativeButton("Cancelar", null)

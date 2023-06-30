@@ -155,7 +155,7 @@ public class PerfilFragment extends Fragment {
         nameProfileTV = rootView.findViewById(R.id.nameProfile);
         emailProfileTV = rootView.findViewById(R.id.emailProfile);
         categoryTV = rootView.findViewById(R.id.categoryTV);
-        skillsListlv = rootView.findViewById(R.id.skillsList);
+        //skillsListlv = rootView.findViewById(R.id.skillsList);
 
 
         // Realizar la solicitud GET para obtener los datos del usuario
@@ -421,9 +421,9 @@ public class PerfilFragment extends Fragment {
                             String userName = response.getString("nameUser");
                             String userEmail = response.getString("email");
                             String userCategory = response.getString("categoria");
-                            String[] skillsList = response.getString("skills").split(",");
+                            //String[] skillsList = response.getString("skills").split(",");
 
-                            System.out.println("Skills: " + skillsList);
+                            //System.out.println("Skills: " + skillsList);
 
                             String urlFoto = response.getString("routesPhoto");
 
@@ -432,10 +432,11 @@ public class PerfilFragment extends Fragment {
                             emailProfileTV.setText(userEmail);
                             categoryTV.setText(userCategory);
 
+                            /*
                             if(isAdded()){
                                 ArrayAdapter<String> skills = new ArrayAdapter<>(requireContext(), android.R.layout.simple_list_item_1, skillsList);
                                 skillsListlv.setAdapter(skills);
-                            }
+                            }*/
 
                         } catch (JSONException e) {
                             e.printStackTrace();
