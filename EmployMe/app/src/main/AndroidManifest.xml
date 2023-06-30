@@ -24,6 +24,10 @@
         android:theme="@style/Theme.NavBotDialog"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".Splash"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.actions"
             android:resource="@xml/file_paths" />
@@ -67,12 +71,10 @@
             android:exported="false"
             android:label="@string/title_activity_login"
             android:theme="@style/Theme.NavBotDialog.NoActionBar" />
-
         <activity
-            android:name="com.example.navbotdialog.Fragment.PerfilFragment"
+            android:name=".Fragment.PerfilFragment"
             android:label="PerfilFragment"
             tools:ignore="Instantiatable" />
-
     </application>
 
 </manifest>
