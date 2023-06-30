@@ -17,11 +17,22 @@
             android:paddingLeft="15dp"
             android:paddingRight="15dp">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:text="Información Personal"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="150dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center"
+                android:layout_gravity="left"
                 android:background="@drawable/rounded_background">
 
                 <androidx.constraintlayout.utils.widget.ImageFilterView
@@ -29,21 +40,13 @@
                     android:layout_width="150dp"
                     android:layout_height="145dp"
 
-                    android:src="@drawable/user_img" />
+                    android:src="@drawable/ic_avatar" />
 
             </LinearLayout>
 
 
 
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="15dp"
-                android:text="Información Personal:"
-                android:textColor="@color/azul"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+
 
             <EditText
                 android:id="@+id/nombreET"
